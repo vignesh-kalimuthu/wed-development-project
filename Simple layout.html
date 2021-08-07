@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Lawncare</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-style: bold;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .header {
+            background-image: url('gym.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        body {
+            background-color: white;
+        }
+        nav {
+            width: 100%;
+            background-color:rgba(0,0,0,0.5);
+            height:80px;
+        }
+        nav ul {
+            list-style-type: none;
+            float: right;
+        }
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+            padding-top: 40px;
+            
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 20px 30px;
+            color:#fff;
+            display: inline;
+            font-weight: 700;
+            
+        }
+        .logo {
+            float: left;
+            padding-top: 30px;
+            margin-left: 70px;
+            font-size: 20px;
+        }
+        a:hover {
+            color:red;
+            transition: 0.5s;
+        }
+        a.active {
+            color:red;
+        }
+        .para {
+            text-align: center;
+            color:white;
+            font-size: 25px;
+            margin-top: 200px;
+            font-weight:bolder;
+        }
+        .para1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 50px;
+            color: white;
+            margin-top: 30px;
+        }
+        .button {
+            text-align: center;
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            margin-left:600px;
+            margin-top: 20px;
+            margin-bottom: 160px;
+            border-radius: 20px;
+        }
+        .button:hover {
+            background-color: rgba(92, 83, 82, 0.507);
+            
+
+        }
+        .parent {
+            background-color: white;
+            text-align: center;
+            padding-top: 90px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color:black;
+            position: relative;
+        }
+        .child {
+            margin: 10px 20px 10px 20px;
+            display: inline-block;
+            padding: 10px;
+            border-style: outset;
+            box-shadow: 10px 10px 10px rgba(190, 165, 165, 0.5);
+            
+
+            
+        }
+        .child:hover {
+             background-color: rgba(245, 131, 116, 0.507);
+        }
+        .img {
+           
+            background-image: url("gym2\ \(2\).jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-weight:bolder;
+            margin-top: 20px;
+            
+        }
+        .img1 {
+            padding-top: 100px;
+            font-size: 50px;
+        }
+        .img2 {
+            padding-top: 35px;
+        }
+        .button_two {
+            text-align: center;
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            padding: 10px 20px;
+            
+            
+            margin-left:50px;
+            margin-top: 40px;
+            margin-bottom: 150px;
+            border-radius: 20px;
+        }
+        .button_two:hover {
+            background-color: rgba(92, 83, 82, 0.507);
+        }
+        .section {
+            background-color: white;
+            margin-top: 30px;
+            color:black;
+            display: block;
+            width: 40%;
+            
+        }
+        .sec1 {
+            font-size: 30px;
+            text-align:center;
+        }
+        .sec2 {
+            text-align: center;
+            padding-top: 30px;
+
+        }
+        .sec {
+            margin: 10px 20px 10px 20px;
+            display: block;
+            padding: 10px;
+            border-style: outset;
+            box-shadow: 10px 10px 10px rgba(190, 165, 165, 0.5);
+            width:230px ;
+            height: 30px;
+            font-size: 20px ;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .sec:hover {
+            color:red;
+        }
+        .button_3 {
+            text-align: center;
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+            margin-bottom: 30px;
+
+
+        }
+        .button_3:hover {
+            background-color: rgba(92, 83, 82, 0.507);
+            color:red;
+            font-size: 30px;
+            border-radius: 30px;
+            pointer-events: cursor;
+
+        }   
+        .img_ {
+            float: left;
+
+        }
+        .table {
+            background-image: url('gym.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            padding-top: 30px;
+            width:60%;
+            
+
+        }
+        .mid {
+            color: black;
+            width: 100%;
+            
+            display:flex;
+            
+        }
+        .body {
+            background-color: rgba(190, 165, 165, 0.5);
+            text-align: center;
+            font-size: 30px;
+            padding: 30px 30px;
+        }
+        table ,th,td {
+            border: 3px solid  black;
+            text-align: left;
+            border-collapse: collapse;
+            padding: 30px;
+            font-size: 20px;
+        }
+        table {
+            margin-top: 60px;
+        }
+        .card {
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 15px 15px 0 rgba(0, 0, 0,0.5);
+            margin:70px;
+            max-height: 435px;
+        
+           
+            
+            
+        }
+        .profile {
+            display: inline-flex;
+        }
+        .title {
+            color:red;
+            font-size:20px;
+            
+        }
+        .but1 {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 15px;
+            
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+        }
+        .g {
+           text-decoration: none;
+           font-size: 30px;
+           color: black;
+        }
+
+        .but1:hover, .g:hover {
+            opacity: 0.7;
+            color: red;
+            
+            
+        }
+        .foot {
+            text-align:center;
+            background-color: rgba(190, 165, 165, 0.377);
+            color:black;
+            display: flex;
+        }
+        .fot {
+            margin:40px;
+        }
+        .fot1 {
+            font-size: 100px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <div class="logo">
+            <h1><span style="color: white;">TRAINING</span><span style="color: red;">STUDIO</span></h1>
+        </div>
+
+       
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CLASSES</a></li>
+            <li><a href="#">SCHEDULES</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a class="active" href="#">SIGN UP</a></li>
+        </ul>
+        
+    </nav>
+
+    
+        <p class="para">WORK HARDER, GET STRONGER</p>
+        <p class="para1">EASY  WITH  OUR <span  style="color: red;"> GYM</span></p>
+        <button class="button">BECOME A MEMBER</button>
+    </div>
+        <div class="parent">
+           <h2>CHOOSE   <span style="color:red" >PROGRAM</span></h2>
+           <p style="margin-top: 15px;"><pre>Training Studio is free CSS template for gyms and fitness centers.You are 
+                              allowed to use this layout for your business website.</pre></p>
+           
+               <div class="child">
+               <h3><span style="color:rgb(245, 51, 51)">Basic Fitness</span></h3>
+               <p><pre>Please do not re-distribute this template zip file 
+            on any template collection website.
+                </pre></p>
+                </div>
+                <div class="child">
+                <h3><span style="color:rgb(245, 51, 51)">Advanced Muscle Course</span></h3>
+                <p><pre>You may want to browse through
+                <span style="color:blue"> Digital Marketing </span>or corporate</pre> </p>
+                </div>
+                <div class="child">
+                    <h3><span style="color:rgb(245, 51, 51)">Basic Fitness</span></h3>
+                    <p><pre>Please do not re-distribute this template zip file 
+                 on any template collection website.</pre></p>
+                </div>
+                <div class="child">
+                        <h3><span style="color:rgb(245, 51, 51)">Basic Fitness</span></h3>
+                        <p><pre>do not re-distribute this template zip file 
+                     on any template collection website.
+                    </pre></p>
+                </div>
+        
+        </div>
+        
+        <div class="img">
+            <h1 class="img1">DON'T <span style="color: red;"> THINK,</span> BEGIN <span style="color: red;" > TODAY</span></h1>
+            <P class="img2">Studio is free CSS template for gyms and fitness centers.</P>
+            <button class="button_two">BECOME A MEMBER</button>
+        </div>
+        <div class="mid">
+        <div class="section">
+            <h1 class="sec1">OUR<span style="color:red;"> CLASSES</span></h1>
+            <p class="sec2"><b>A healthy gymnastic body not only reflects a great personality<br>
+                      but it also makes you stronger and keep fit.</b></p>
+            <p class="sec">First Training Class</p>
+            <p class="sec">Second Training Class</p>
+            <p class="sec">Third Training Class</p>
+            <p class="sec">Fourth Training Class</p>
+            <button class="button_3">View All Schedules</button>
+            
+        </div>
+        <div class="table">
+            <h1 class="sec1"><span style="color: white;">OUR</span><span style="color:red;"> CLASSES</span></h1>
+            <p class="para">WORK HARDER, GET STRONGER</p>
+        <p class="para1">EASY  WITH  OUR <span  style="color: red;"> GYM</span></p>
+        </div>
+      </div>
+
+      <div class="body">
+        <p><span style="color:red;">Monday</span> / Tuesday / Wednesday / Thursday / Friday / Saturday</p>
+          <table style="width:100%">
+              <caption>Class Time Table</caption>
+          <tr>
+              <th>CLASSES</th>
+              <th>TIMING(F.N)</th>
+              <th>TIMING(A.N)</th>
+              <th>TRAINNER NAME</th>
+         </tr>
+         <tr>
+            <td>Fitness</td>
+            <td>6am - 7am</td>
+            <td>6pm - 7pm</td>
+            <td>john</td>
+         </tr>
+         <tr>
+            <td>Body</td>
+            <td>7am - 8am</td> 
+            <td>7pm - 8pm</td>
+            <td>peter</td>
+        </tr>
+            
+        <tr>
+            <td>Yoga</td>
+            <td>8am - 9am</td> 
+            <td>8pm - 9pm</td>
+            <td>sam</td>
+                  
+        </tr>
+        <tr>
+            <td>Muscle</td>
+            <td>9am - 10am</td> 
+            <td>9pm - 10pm</td>
+            <td>Dony</td>
+                  
+        </tr>         
+        </table>
+     </div>
+     <div class="profile">
+         <div class="card">
+          <img src="trainner3.jpg"  alt="trainner1" width="100%" height="50%" >
+          <h1>John </h1>
+          <p class="title">Fitness Trainner</p>
+          <p>HI-FI Gym</p>
+          <div style="margin: 24px 0;">
+    <a class="g" href="#"><i class="fa fa-dribbble"></i></a> 
+    <a class="g" href="#"><i class="fa fa-twitter"></i></a>  
+    <a class="g" href="#"><i class="fa fa-linkedin"></i></a>  
+    <a class="g" href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <p><button class="but1">Contact</button></p> 
+
+         </div>
+         <div class="card">
+            <img src="trainner3.jpg"  alt="trainner1" width="100%" height="50%">
+            <h1>Peter</h1>
+            <p class="title">Body Trainner</p>
+            <p>HI-FI Gym</p>
+            <div style="margin: 24px 0;">
+      <a  class="g" href="#"><i class="fa fa-dribbble"></i></a> 
+      <a class="g" href="#"><i class="fa fa-twitter"></i></a>  
+      <a class="g" href="#"><i class="fa fa-linkedin"></i></a>  
+      <a class="g" href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+      <p><button class="but1">Contact</button></p> 
+         </div>
+         <div class="card">
+            <img src="trainner3.jpg"  alt="trainner1" width="100%" height="50%">
+          <h1>Sam </h1>
+          <p class="title">Yoga Trainner</p>
+          <p>HI-FI Gym</p>
+          <div style="margin: 24px 0;">
+    <a class="g" href="#"><i class="fa fa-dribbble"></i></a> 
+    <a class="g" href="#"><i class="fa fa-twitter"></i></a>  
+    <a class="g" href="#"><i class="fa fa-linkedin"></i></a>  
+    <a class="g" href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <p><button class="but1">Contact</button></p> 
+     </div>
+     </div>
+     <footer class="foot">
+         <div class="fot">
+             
+                <h2>GET STARTED</h2> 
+              <P>Home</P>
+              <p>Sign UP</p>
+              <p>Training</p>
+             
+
+         </div>
+         <div class="fot">
+             <h2>ABOUT US</h2>
+             <p>Company Information</p>
+             <p>Conduct Us</p>
+             <p>Reviews</p>
+
+         </div>
+         <div class="fot">
+             <h2>SUPPORT</h2>
+             <p>FAQ</p>
+             <p>Help Desk</p>
+             <p>Forum</p>
+
+         </div>
+         <div class="fot">
+             <h2>LEGAL</h2>
+             <p>Terms Of Services</p>
+             <p>Terms Of Use</p>
+             <p>Privacy Policy</p>
+       </div>
+       
+        <div class="fot1"style="margin: 40px 0;">
+             
+            <a class="g" href="#"><i class="fa fa-twitter"></i></a>  
+            <a class="g" href="#"><i class="fa fa-linkedin"></i></a>  
+            <a class="g" href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+
+       
+     </footer>
+        
+
+    </body>
+</html>
